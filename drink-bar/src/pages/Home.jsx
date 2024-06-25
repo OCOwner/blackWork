@@ -1,11 +1,16 @@
 import React from 'react';
+import { styled } from 'styled-components';
 
 const Home = () => {
   return (
-    <div>
+    <Container>
       <h1>Home</h1>
-    </div>
+    </Container>
   );
 };
 
 export default Home;
+
+const Container = styled.div`
+  /* flex: 1; */
+`;
