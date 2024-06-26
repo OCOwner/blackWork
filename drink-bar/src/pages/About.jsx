@@ -7,10 +7,11 @@ import TimeMenu from '../components/about/TimeMenu';
 import Menu from '../shared/Menu';
 import Call from '../components/about/Call';
 import Number from '../components/about/Number';
+import styled from 'styled-components';
 
 const About = () => {
   return (
-    <div>
+    <Container>
       <AboutTitle />
       <BestBar />
       <Discription />
@@ -18,9 +19,12 @@ const About = () => {
       <Menu barName={"강남역 착석바"} eng={"BAR11"}/>
       <Call />
       <Number />
-
-    </div>
+    </Container>
   );
 };
 
 export default About;
+
+const Container = styled.div`
+  background-color: ${(props) => props.theme.color.background};
+`;
