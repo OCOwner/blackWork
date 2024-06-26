@@ -16,6 +16,8 @@ const FourthDescription = () => {
 export default FourthDescription;
 
 const Container = styled.div`
+    background-color: ${(props) => props.theme.color.background};
+    color: #ffffff;
     border-style: solid;
     text-align: center; // 타이틀을 가운데 정렬합니다
 `;

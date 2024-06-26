@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-const QandA = ({ title }) => {
+const QandA = ({ title, manager, number }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -66,7 +66,7 @@ const QandA = ({ title }) => {
           {openIndex === index && <A>{item.A}</A>}
         </Box>
       ))}
-      <Manager>석구실장<br />010-2073-9979</Manager>
+      <Manager>{manager}<br />{number}</Manager>
     </Container>
   );
 };
@@ -74,11 +74,7 @@ export default QandA;
 
 const Container = styled.div`
   background-color: ${(props) => props.theme.color.background};
-  max-width: 800px;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 10px;
+  color: #ffffff;
 `;
 
 const Title = styled.h1`
@@ -90,8 +86,10 @@ const Title = styled.h1`
 
 const Box = styled.div`
   border: 1px solid #333;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
   padding: 20px;
-  margin: 10px 0;
   border-radius: 5px;
   background-color: #2a2a2a; /* 어두운 박스 배경색 */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
