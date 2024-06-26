@@ -13,8 +13,8 @@ const Call = () => {
 export default Call;
 
 const CallandMassage = styled.div`
+    background-color: ${(props) => props.theme.color.background};
     display: flex;
     justify-content: center;
-    align-item: center;
-
+    align-items: center;
 `;
