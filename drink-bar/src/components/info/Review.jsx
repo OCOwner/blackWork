@@ -69,7 +69,7 @@ const Title = styled.h1`
   font-size: 50px;
   margin: 0;
   font-weight: 900;
-  color: #333;
+  color: #ffffff;
 `;
 
 const Contants = styled.div`
