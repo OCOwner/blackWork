@@ -37,7 +37,7 @@ const Title = styled.h1`
 `;
 const Image = styled.img`
     border-radius: 5px;
-    max-width: 842px;
+    max-width: 59%;
     height: auto;
 `;
 const ImageRow = styled.div`
@@ -46,9 +46,9 @@ const ImageRow = styled.div`
     margin-top: 20px; // 이미지 간의 간격을 위해 상단 여백 추가
 `;
 const Image2 = styled.img`
-    max-width: 420px;
+    max-width: 34%;
     height: auto;
-    margin-left: 10px;
+    margin-left: 1%;
     border-radius: 5px;
 `;
 const BarName = styled.p`

@@ -4,20 +4,22 @@ import image from "../../assets/image/image18.jpeg";
 const SecondDescription = () => {
     return (
         <Container>
-            <Image src={image} />
-            <DescriptionContainer>
-                <Title>강남역 착석바</Title>
-                <Contents>
-                    저희 BAR11은 강남유일의 클럽형 착석바입니다.<br />
-                    급변하는 트렌드에 맞춰 고객님들의 니즈에 발 맞추고<br />
-                    기존 모던바 시스템을 탈피하기 위해 연구한 결과 트렌드에<br />
-                    맞는 신개념 시스템을 도입했습니다.<br />
-                    <br />
-                    고객님의 부담은 줄여드리고 즐거움은 제곱으로 증가시키는<br />
-                    강남 최고의 착석바 BAR11이 될 것을 약속 드리겠습니다.<br />
-                    문의전화: 010-2073-9779<br />
-                </Contents>
-            </DescriptionContainer>
+            <Content>
+                <Image src={image} />
+                <DescriptionContainer>
+                    <Title>강남역 착석바</Title>
+                    <Contents>
+                        저희 BAR11은 강남유일의 클럽형 착석바입니다.<br />
+                        급변하는 트렌드에 맞춰 고객님들의 니즈에 발 맞추고<br />
+                        기존 모던바 시스템을 탈피하기 위해 연구한 결과 트렌드에<br />
+                        맞는 신개념 시스템을 도입했습니다.<br />
+                        <br />
+                        고객님의 부담은 줄여드리고 즐거움은 제곱으로 증가시키는<br />
+                        강남 최고의 착석바 BAR11이 될 것을 약속 드리겠습니다.<br />
+                        문의전화: 010-2073-9779<br />
+                    </Contents>
+                </DescriptionContainer>
+            </Content>
         </Container>
     );
 }
@@ -25,17 +27,19 @@ const SecondDescription = () => {
 export default SecondDescription;
 
 const Container = styled.div`
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
     background-color: #ffffff;
+    padding: 120px;
+`;
+
+const Content = styled.div`
     display: flex;
     flex-wrap: wrap;
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 정렬 */
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 300px;
     text-align: center; /* 내용 가운데 정렬 */
-    
 `;
 
 const Image = styled.img`

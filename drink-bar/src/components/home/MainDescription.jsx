@@ -57,6 +57,6 @@ const Description = styled.p`
 
 const Call = styled.div`
     display: flex;
-    justify-content: center; /* 가운데 정렬 */
+    flex-direction: row; /* 자식 요소들을 가로로 배열 */
     margin-top: 20px; /* 위쪽 여백 추가 */
 `;

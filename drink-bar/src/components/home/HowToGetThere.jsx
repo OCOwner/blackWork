@@ -37,6 +37,7 @@ const Container = styled.div`
 const ContentWrapper = styled.div`
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* 자식 요소들이 한 줄에 다 들어가지 않으면 여러 줄로 나뉘게 설정 */
 `;
 
 const HowToText = styled.div`
