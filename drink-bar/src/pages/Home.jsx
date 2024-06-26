@@ -1,10 +1,13 @@
 import React from 'react';
+import MainDescription from '../components/home/MainDescription'
 import { styled } from 'styled-components';
+import SecondDescription from '../components/home/SecondDescription';
 
 const Home = () => {
   return (
     <Container>
-      <h1>Home</h1>
+      <MainDescription />
+      <SecondDescription />
     </Container>
   );
 };
