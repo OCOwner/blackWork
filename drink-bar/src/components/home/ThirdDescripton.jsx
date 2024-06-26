@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import image from "../../assets/image/image12.jpeg";
 import backgroundImage from "../../assets/image/place7.jpeg";
-import Call from "./Call";
+import Call from "./Call.jsx";
 
 const ThirdDescription = () => {
   return (
