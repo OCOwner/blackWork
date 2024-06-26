@@ -13,7 +13,8 @@ const Call = () => {
 export default Call;
 
 const CallandMassage = styled.div`
+    background-color: ${(props) => props.theme.color.background};
     display: flex;
-    justify-content: flex-start; /* 왼쪽으로 정렬 */
-    margin-left: 630px;
+    justify-content: center;
+    align-items: center;
 `;

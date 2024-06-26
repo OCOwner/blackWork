@@ -2,7 +2,7 @@ import styled from "styled-components";
 import image1 from "../../assets/image/place3.jpeg";
 import image2 from "../../assets/image/place6.jpeg";
 import image3 from "../../assets/image/place7.jpeg";
-import menu from "../../assets/image/image8.jpeg";
+import menu1 from "../../assets/image/image8.jpeg";
 
 const TimeMenu = () => {
     return(
@@ -13,7 +13,7 @@ const TimeMenu = () => {
                 <Image src={image2}/>
                 <Image src={image3}/>
             </ImageBox>
-            <Menu src={menu}/>
+            <Menu1 src={menu1}/>
         </Container>
     );
 }
@@ -47,7 +47,7 @@ const Image = styled.img`
     height: auto;
 `;
 
-const Menu = styled.img`
+const Menu1 = styled.img`
     /* object-fit: cover; 이미지 비율을 유지하면서 크기를 맞춤 */
     width: 61%;
     height: auto;
