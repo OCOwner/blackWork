@@ -26,6 +26,7 @@ const SecondDescription = () => {
 export default SecondDescription;
 
 const Container = styled.div`
+    border-style: solid;
     display: flex;
     align-items: flex-start;
     padding: 20px;
@@ -45,7 +46,6 @@ const DiscriptionContainer= styled.div`
 
 const Title = styled.p`
     font-size: 39px;
-    margin: 0;
 `;
 
 const Contents = styled.p`
