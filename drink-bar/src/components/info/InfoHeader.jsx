@@ -28,6 +28,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  border: 1px solid #333333;
   padding: 20px;
   background-image: url(${backgroundImage}); // 배경 이미지 설정
   background-size: cover; // 이미지를 컨테이너 크기에 맞춤
@@ -71,16 +72,16 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-  width: 80px;
+  width: 100px;
   height: auto;
   border-radius: 10px;
 `;
 
 const Line = styled.div`
   height: 2px;
-  background-color: ${(props) => props.theme.color.signature};
+  background-color: black;
   flex-grow: 1;
-  max-width: 500px;
+  max-width: 300px;
 `;
 
 const QA = styled.p`
