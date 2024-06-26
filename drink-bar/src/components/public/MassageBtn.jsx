@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MassageBtn = () => {
-  const phoneNumber = '010-5691-6578';
+  const phoneNumber = '010-3102-0233';
 
   return (
     <ButtonWrapper>

@@ -66,7 +66,11 @@ const QandA = ({ title, manager, number }) => {
           {openIndex === index && <A>{item.A}</A>}
         </Box>
       ))}
-      <Manager>{manager}<br />{number}</Manager>
+      <Manager>
+        {manager}
+        <br />
+        {number}
+      </Manager>
     </Container>
   );
 };
@@ -75,6 +79,7 @@ export default QandA;
 const Container = styled.div`
   background-color: ${(props) => props.theme.color.background};
   color: #ffffff;
+  padding: 10px;
 `;
 
 const Title = styled.h1`
@@ -129,7 +134,7 @@ const A = styled.p`
   color: #ccc; /* 답변 텍스트 색상 */
   line-height: 1.5;
 `;
-const Manager =styled.p`
-    text-align: center;
-    font-size: 20px;
+const Manager = styled.p`
+  text-align: center;
+  font-size: 20px;
 `;
