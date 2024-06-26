@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import image from "../../assets/image/image12.jpeg";
-import backgroundImage from "../../assets/image/place7.jpeg";
-import Call from "./Call";
+import styled from 'styled-components';
+import image from '../../assets/image/image12.jpeg';
+import backgroundImage from '../../assets/image/place7.jpeg';
+import Call from './Call';
 
 const ThirdDescription = () => {
   return (
@@ -9,24 +9,22 @@ const ThirdDescription = () => {
       <Title>강남토킹바</Title>
       <ContentContainer>
         <TextContainer>
-          <LittleTitle>이런 분들에게<br />추천드립니다.</LittleTitle>
+          <LittleTitle>이런 분들에게 추천드립니다.</LittleTitle>
           <Contents>
-            1. 화류계에 질리신 대표님들<br />
-            <br />
-            2. 매번 색다른 여성들을 만나고 싶으신 분들<br />
-            <br />
-            3. 어린 20대 일반인 여성을 만나고 싶으신 분들<br />
-            <br />
-            투잡으로 정말 다양한 직업군의 여성분들이 50~60명씩 항시 대기중<br />
-            입니다. 매번 색다르고 질리지 않는 홀초이스 서비스로 대표님들을<br /> 
-            만족시켜드립니다.
+            <Ment>1. 화류계에 질리신 대표님들</Ment>
+            <Ment>2. 매번 색다른 여성들을 만나고 싶으신 분들</Ment>
+            <Ment>3. 어린 20대 일반인 여성을 만나고 싶으신 분들</Ment>
+            <Ment>
+              투잡으로 정말 다양한 직업군의 여성분들이 50~60명씩 항시 대기중
+              입니다. 매번 색다르고 질리지 않는 홀초이스 서비스로 대표님들을
+              만족시켜드립니다.
+            </Ment>
           </Contents>
-          <CallContainer>
-            <Call />
-          </CallContainer>
         </TextContainer>
+
         <Image src={image} alt="사진" />
       </ContentContainer>
+      <Call />
     </Container>
   );
 };
@@ -36,63 +34,79 @@ export default ThirdDescription;
 // 전체 컨테이너 스타일 설정
 const Container = styled.div`
   background-image: url(${backgroundImage});
-  background-size: cover; /* 배경 이미지를 컨테이너에 맞춰서 늘리거나 줄입니다 */
-  background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
-  background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #ffffff;
   display: flex;
-  flex-direction: column; // 내부 요소를 세로로 배치
-  align-items: center; // 내부 요소들을 수직 축에서 가운데 정렬
-  padding: 2%; // 내부 여백 설정
-  text-align: center; // 자식 요소들을 가운데 정렬
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 부드러운 그림자 추가
+  border-radius: 10px; // 모서리를 둥글게 설정
 `;
 
 // 컨텐츠 컨테이너 스타일 설정
 const ContentContainer = styled.div`
-  display: flex; // 내부 요소를 플렉스 박스로 배치
-  justify-content: center; // 내부 요소들을 가운데 정렬
-  align-items: center; // 세로 축에서 가운데 정렬
-  margin-top: 2%; // 위쪽 여백 설정
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin-top: 2%;
 `;
 
 // 텍스트 컨테이너 스타일 설정
 const TextContainer = styled.div`
-  display: flex; // 내부 요소를 플렉스 박스로 배치
-  flex-direction: column; // 세로로 요소들을 배열
-  max-width: 50%; // 최대 너비 설정
-  text-align: left; // 텍스트를 왼쪽 정렬
-  align-items: flex-start; // 세로 방향에서 왼쪽 정렬
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  text-align: left;
+  align-items: flex-start;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); // 반투명 배경색 추가
+  border-radius: 10px; // 모서리를 둥글게 설정
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 부드러운 그림자 추가
 `;
 
 // 제목 스타일 설정
 const Title = styled.p`
-  font-size: 50px; // 글꼴 크기 설정
-  text-align: center; // 자식 요소들을 가운데 정렬
+  font-size: 50px;
+  text-align: center;
+  color: #ffeb3b; // 강조된 색상으로 변경
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); // 텍스트 그림자 추가
+  margin-bottom: 10px; // 하단 여백 추가
 `;
 
 // 작은 제목 스타일 설정
 const LittleTitle = styled.p`
-  font-size: 30px; // 글꼴 크기 설정
-  margin-bottom: 1%; // 하단 여백 설정
-  margin-left: 25%; // 왼쪽 여백 설정
+  font-size: 30px;
+  margin-bottom: 1%;
+  font-weight: bold;
+  color: #ffeb3b; // 강조된 색상으로 변경
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); // 텍스트 그림자 추가
 `;
 
 // 본문 내용 스타일 설정
-const Contents = styled.p`
-  font-size: 20px; // 글꼴 크기 설정
-  line-height: 1.5; // 줄 간격 설정
+const Contents = styled.div`
+  font-size: 20px;
+  line-height: 1.5;
+  color: #ffffff;
+`;
+
+// 멘트 스타일 설정
+const Ment = styled.p`
+  margin-bottom: 10px; // 각 멘트 간에 약간의 여백 추가
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 // 이미지 스타일 설정
 const Image = styled.img`
-  max-width: 50%; // 너비 설정
-  height: auto; // 높이 자동 설정
-  margin-left: 2%; // 왼쪽 여백 설정
-  border-radius: 5px;
-`;
-
-// 콜 컨테이너 스타일 설정
-const CallContainer = styled.div`
-  margin-top: 20px; // 위쪽 여백 설정
-  margin-left: -660px; // 왼쪽 여백 설정, LittleTitle과 맞추기 위해 조정
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px; // 모서리를 둥글게 설정
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 부드러운 그림자 추가
 `;
