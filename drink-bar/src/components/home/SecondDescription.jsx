@@ -39,6 +39,7 @@ const Container = styled.div`
 const Image = styled.img`
     max-width: 300px;
     height: auto;
+    border-radius: 5px;
     object-fit: cover; /* 이미지 비율 유지하며 잘라내기 */
     margin-right: 20px;
 `;

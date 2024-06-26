@@ -35,6 +35,7 @@ const ImageContainer = styled.div`
     gap: 30px; // 이미지 사이의 간격을 설정합니다
 `;
 const Image = styled.img`
+    border-radius: 5px;
     width: 480px;
     height: 480px;
 `;
