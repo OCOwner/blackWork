@@ -18,24 +18,29 @@ const FourthDescription = () => {
 export default FourthDescription;
 
 const Container = styled.div`
+    display: flex;
     background-image: url(${backgroundImage});
     background-size: cover; /* 배경 이미지를 컨테이너에 맞춰서 늘리거나 줄입니다 */
     background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
     background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
     color: #ffffff;
     text-align: center; // 타이틀을 가운데 정렬합니다
-    padding: 100px;
+    padding: 1%;
+    flex-direction: column; // 내부 요소를 세로로 배치
+    align-items: center; // 내부 요소들을 수직 축에서 가운데 정렬
 `;
-const Title = styled.h2`
+const Title = styled.p`
     margin-bottom: 20px;
+    font-size: 50px;
 `;
 const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
     gap: 30px; // 이미지 사이의 간격을 설정합니다
+    flex-wrap: wrap; /* 자식 요소들이 한 줄에 다 들어가지 않으면 여러 줄로 나뉘게 설정 */
 `;
 const Image = styled.img`
     border-radius: 5px;
-    width: 480px;
-    height: 480px;
+    max-width: 30%;
+    height: auto;
 `;

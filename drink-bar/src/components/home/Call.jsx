@@ -14,7 +14,6 @@ export default Call;
 
 const CallandMassage = styled.div`
     display: flex;
-    justify-content: center;
-    align-item: center;
-
+    justify-content: flex-start; /* 왼쪽으로 정렬 */
+    margin-left: 630px;
 `;

@@ -41,7 +41,8 @@ const Container = styled.div`
   background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
   color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column; // 내부 요소를 세로로 배치
+  align-items: center; // 내부 요소들을 수직 축에서 가운데 정렬
   padding: 2%; // 내부 여백 설정
   text-align: center; // 자식 요소들을 가운데 정렬
 `;
@@ -64,21 +65,21 @@ const TextContainer = styled.div`
 `;
 
 // 제목 스타일 설정
-const Title = styled.h1`
-  font-size: 24px; // 글꼴 크기 설정
-  margin: 0 auto; // 가운데 정렬을 위한 외부 여백 설정
+const Title = styled.p`
+  font-size: 50px; // 글꼴 크기 설정
+  text-align: center; // 자식 요소들을 가운데 정렬
 `;
 
 // 작은 제목 스타일 설정
-const LittleTitle = styled.h2`
-  font-size: 30x; // 글꼴 크기 설정
+const LittleTitle = styled.p`
+  font-size: 30px; // 글꼴 크기 설정
   margin-bottom: 1%; // 하단 여백 설정
   margin-left: 25%; // 왼쪽 여백 설정
 `;
 
 // 본문 내용 스타일 설정
 const Contents = styled.p`
-  font-size: 16px; // 글꼴 크기 설정
+  font-size: 20px; // 글꼴 크기 설정
   line-height: 1.5; // 줄 간격 설정
 `;
 
