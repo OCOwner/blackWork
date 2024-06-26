@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import image1 from "../../assets/image/image2.webp";
-import image2 from "../../assets/image/image2.webp";
-import image3 from "../../assets/image/image2.webp";
+import image1 from "../../assets/image/place3.jpeg";
+import image2 from "../../assets/image/place6.jpeg";
+import image3 from "../../assets/image/place7.jpeg";
 import menu from "../../assets/image/image8.jpeg";
 
 const TimeMenu = () => {
@@ -26,6 +26,7 @@ const Container = styled.div`
     flex-direction: column; /* 요소들을 세로로 정렬 */
     align-items: center; /* 내부 요소들을 수직 축에서 가운데 정렬 */
     margin-bottom: 10px;
+    max-width: 100%;
 `;
 
 const Title = styled.p`
@@ -42,10 +43,13 @@ const ImageBox = styled.div`
 
 const Image = styled.img`
     border-radius: 5px;
-    max-width: 270px; /* 이미지 최대 너비 설정 */
+    max-width: 20%; /* 이미지 최대 너비 설정 */
     height: auto;
 `;
 
 const Menu = styled.img`
-    object-fit: cover; /* 이미지 비율을 유지하면서 크기를 맞춤 */
+    /* object-fit: cover; 이미지 비율을 유지하면서 크기를 맞춤 */
+    width: 61%;
+    height: auto;
+    margin-top: 10px;
 `;

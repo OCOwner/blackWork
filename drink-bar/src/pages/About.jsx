@@ -4,7 +4,7 @@ import Discription from '../components/about/Discription';
 
 import AboutTitle from '../components/about/AboutTitle';
 import TimeMenu from '../components/about/TimeMenu';
-import Menu from '../components/home/Menu';
+import Menu from '../shared/Menu';
 import Call from '../components/about/Call';
 import Number from '../components/about/Number';
 

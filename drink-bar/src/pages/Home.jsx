@@ -4,7 +4,7 @@ import MainDescription from '../components/home/MainDescription';
 import SeatBar from '../components/home/SeatBar';
 import TalkBar from '../components/home/TalkBar';
 import TalkBarGuide from '../components/home/TalkBarGuide';
-import Menu from '../components/home/Menu';
+import Menu from '../shared/Menu';
 import QandA from '../components/home/QandA';
 import Review from '../components/info/Review';
 import HowToGetThere from '../components/home/HowToGetThere';

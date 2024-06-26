@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import image1 from "../../assets/image/menu.jpg";
-import image2 from "../../assets/image/image13.png";
-import image3 from "../../assets/image/image10.jpeg";
-import backgroundImage from "../../assets/image/image18.jpeg";
+import image1 from "../../src/assets/image/menu.jpg";
+import image2 from "../../src/assets/image/image13.png";
+import image3 from "../../src/assets/image/image10.jpeg";
+import backgroundImage from "../../src/assets/image/image18.jpeg";
 
 const Menu = ({barName, eng}) => {
     return (

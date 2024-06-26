@@ -16,5 +16,5 @@ const Container = styled.div`
     margin: -30px;
 `;
 const NameNumber = styled.p`
-    font-size:50px;
+    font-size:300%;
 `;
