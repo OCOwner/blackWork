@@ -28,7 +28,6 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 1px solid #333333;
   padding: 20px;
   background-image: url(${backgroundImage}); // 배경 이미지 설정
   background-size: cover; // 이미지를 컨테이너 크기에 맞춤
