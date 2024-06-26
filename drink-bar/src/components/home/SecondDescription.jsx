@@ -26,6 +26,7 @@ const SecondDescription = () => {
 export default SecondDescription;
 
 const Container = styled.div`
+    background-color: ${(props) => props.theme.color.background};
     border-style: solid;
     display: flex;
     align-items: flex-start;
@@ -39,6 +40,8 @@ const Image = styled.img`
 `;
 
 const DiscriptionContainer= styled.div`
+    background-color: ${(props) => props.theme.color.background};
+    color:#ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -29,6 +29,8 @@ export default ThirdDescription;
 
 // 전체 컨테이너 스타일 설정
 const Container = styled.div`
+    background-color: ${(props) => props.theme.color.background};
+    color: #ffffff;
     padding: 2%; // 상대적인 내부 여백 설정
     border-style: solid; // 테두리 스타일 설정
     text-align: center; // 자식 요소들을 가운데 정렬

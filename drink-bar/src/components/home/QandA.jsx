@@ -66,19 +66,19 @@ const QandA = ({ title }) => {
           {openIndex === index && <A>{item.A}</A>}
         </Box>
       ))}
+      <Manager>석구실장<br />010-2073-9979</Manager>
     </Container>
   );
 };
 export default QandA;
 
 const Container = styled.div`
+  background-color: ${(props) => props.theme.color.background};
   max-width: 800px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #1a1a1a; /* 어두운 배경색 */
-  color: #fff; /* 텍스트 색상 */
 `;
 
 const Title = styled.h1`
@@ -130,4 +130,7 @@ const A = styled.p`
   margin-top: 10px;
   color: #ccc; /* 답변 텍스트 색상 */
   line-height: 1.5;
+`;
+const Manager =styled.p`
+    
 `;

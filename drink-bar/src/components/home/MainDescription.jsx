@@ -19,6 +19,8 @@ const MainDescription = () => {
 export default MainDescription;
 
 const Container = styled.div`
+    background-color: ${(props) => props.theme.color.background};
+    color: #ffffff;
     border-style: solid;
     padding-top: 300px;
     padding-bottom: 169px;
