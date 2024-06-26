@@ -1,9 +1,10 @@
 import React from 'react';
+import InfoHeader from '../components/info/InfoHeader';
 
 const Info = () => {
   return (
     <div>
-      <h1>Info</h1>
+      <InfoHeader />
     </div>
   );
 };
