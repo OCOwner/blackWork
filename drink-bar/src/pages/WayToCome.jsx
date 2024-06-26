@@ -1,9 +1,10 @@
 import React from 'react';
+import Map from '../components/welcome/Map';
 
 const WayToCome = () => {
   return (
     <div>
-      <h1>오시는길</h1>
+      <Map />
     </div>
   );
 };
