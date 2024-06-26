@@ -3,6 +3,7 @@ const theme = {
     //컬러는 따로 수정해야됨
     background: '#000000',
     signature: '#cea46f',
+    white: '#ffffff',
   },
   size: {
     smallMobile: 'screen and (max-width: 380px)',
