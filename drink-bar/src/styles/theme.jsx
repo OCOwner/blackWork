@@ -1,17 +1,8 @@
 const theme = {
   color: {
     //컬러는 따로 수정해야됨
-    neonGreen: '#6BF65F',
-    oliveGreen: '#2C4001',
-    lightGreen: '#45BE59',
-    blueGreen: '#5FF6D2',
-    lightGray: '#F3F3F3',
-    paleGray: '#C7C7C7',
-    gray: '#E7E7E7',
-    darkModeGray: '#191a1d',
-    skyBlue: '#99E7FF',
-    errorRed: '#F6685F',
-    fontColor: '#3B3B3B',
+    background: '#000000',
+    signature: '#cea46f',
   },
   size: {
     smallMobile: 'screen and (max-width: 380px)',

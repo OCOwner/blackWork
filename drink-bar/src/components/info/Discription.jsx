@@ -29,7 +29,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: ${(props) => props.theme.color.background};
 `;
 
 const InfoBoxWrapper = styled.div`

@@ -78,7 +78,7 @@ const StyledImage = styled.img`
 
 const Line = styled.div`
   height: 2px;
-  background-color: red;
+  background-color: ${(props) => props.theme.color.signature};
   flex-grow: 1;
   max-width: 500px;
 `;
