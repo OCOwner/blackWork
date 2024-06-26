@@ -9,11 +9,13 @@ const Menu = ({barName, eng}) => {
         <Container>
             {barName !== "" ? <BarName>{barName}<br/>{eng}</BarName> : null}
             <Title>MENU</Title>
-            <Image src= {image1} alt="Menu"/>
-            <ImageRow>
-            <Image2 src= {image2} alt="servImage" />
-            <Image2 src= {image3} alt="servImage" />
-            </ImageRow>
+            <ImageContainer>
+                <Image src= {image1} alt="Menu"/>
+                <ImageRow>
+                    <Image2 src= {image2} alt="servImage" />
+                    <Image2 src= {image3} alt="servImage" />
+                </ImageRow>
+            </ImageContainer>
         </Container>
     );
 }
@@ -35,21 +37,28 @@ const Container = styled.div`
 const Title = styled.h1`
     text-align: center;
 `;
+const ImageContainer = styled.div`
+`;
 const Image = styled.img`
     border-radius: 5px;
-    max-width: 59%;
+    max-width: 60%;
     height: auto;
 `;
 const ImageRow = styled.div`
     display: flex; // 플렉스 박스로 설정
     justify-content: center; // 내부 요소들을 가로로 가운데 정렬
     margin-top: 20px; // 이미지 간의 간격을 위해 상단 여백 추가
+    flex-wrap: wrap; /* 자식 요소들이 한 줄에 다 들어가지 않으면 여러 줄로 나뉘게 설정 */
 `;
 const Image2 = styled.img`
-    max-width: 34%;
-    height: auto;
-    margin-left: 1%;
-    border-radius: 5px;
+    width: 100%; /* 부모 컨테이너의 너비를 100%로 채우기 */
+    max-width: ${(props) =>
+    props.large ? '850px' : '400px'}; /* 이미지의 최대 너비 제한 */
+    height: auto; /* 비율을 유지하면서 높이를 자동 조정 */
+    border-radius: 20px;
+    margin: 10px;
+    object-fit: cover; /* 비율을 유지하면서 이미지를 잘 맞춰줌 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 추가 */
 `;
 const BarName = styled.p`
     font-size: 41px;

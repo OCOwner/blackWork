@@ -40,7 +40,12 @@ const ImageContainer = styled.div`
     flex-wrap: wrap; /* 자식 요소들이 한 줄에 다 들어가지 않으면 여러 줄로 나뉘게 설정 */
 `;
 const Image = styled.img`
-    border-radius: 5px;
-    max-width: 30%;
-    height: auto;
+  width: 100%; /* 부모 컨테이너의 너비를 100%로 채우기 */
+  max-width: ${(props) =>
+  props.large ? '850px' : '400px'}; /* 이미지의 최대 너비 제한 */
+  height: auto; /* 비율을 유지하면서 높이를 자동 조정 */
+  border-radius: 20px;
+  margin: 10px;
+  object-fit: cover; /* 비율을 유지하면서 이미지를 잘 맞춰줌 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 약간의 그림자 효과 추가 */
 `;

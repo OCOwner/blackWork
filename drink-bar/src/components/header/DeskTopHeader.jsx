@@ -22,7 +22,7 @@ const DeskTopHeader = () => {
           <HeaderLink
             key={index}
             to={item.path}
-            activeclassname="active"
+            activeClassName="active"
             className="header-link"
           >
             {item.value}
@@ -32,30 +32,38 @@ const DeskTopHeader = () => {
     </Container>
   );
 };
+
 const LogoLink = styled(NavLink)`
 `;
+
 const Logo = styled.img`
   max-width: 10%;
-  background-size: cover; /* 배경 이미지를 컨테이너에 맞춰서 늘리거나 줄입니다 */
-  background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
+  height: auto;
 `;
+
 const Container = styled.div`
-    display: flex;
-  justify-content: space-between; /* 공간을 두 요소 사이에 균등하게 분배 */
-  align-items: center; /* 수직 축에서 가운데 정렬 */
-  padding: 0.3% 10%; /* 상하 1%, 좌우 20% 여백 설정 */
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 10px 20px; /* 수정: 좀 더 큰 여백으로 설정 */
   background-color: #ffffff;
-  border-bottom: 1px solid #ccc;
 `;
+
 const HeaderContainer = styled.div`
-  display: flex; /* 플렉스 박스로 설정 */
-  align-items: center; /* 수직 축에서 가운데 정렬 */
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* 추가: 네비게이션 링크들이 한 줄에 들어가지 않으면 다음 줄로 넘어가게 설정 */
 `;
+
 const HeaderLink = styled(NavLink)`
   text-decoration: none;
   color: #333;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px;
+  padding: 10px; /* 추가: 좀 더 큰 패딩으로 설정 */
+
+  &.active {
+    font-weight: bold;
+  }
 `;
 
 export default DeskTopHeader;
