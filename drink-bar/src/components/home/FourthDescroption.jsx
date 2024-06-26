@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import image1 from "../../assets/image/background-image.png"
 import image2 from "../../assets/image/background-image.png"
-const ThirdDescription = () => {
+const FourthDescription = () => {
     return (
         <Container>
             <Title>강남역 토킹바 가이드</Title>
@@ -13,7 +13,7 @@ const ThirdDescription = () => {
     );
 }
 
-export default ThirdDescription;
+export default FourthDescription;
 
 const Container = styled.div`
     border-style: solid;
