@@ -37,7 +37,7 @@ const Container = styled.div`
     justify-content: center; /* 수직 방향 가운데 정렬 */
     align-items: center; /* 수평 방향 가운데 정렬 */
     text-align: center; /* 텍스트 가운데 정렬 */
-    height: 100vh; /* 화면 전체 높이에 맞추기 위해 */
+    height: 95vh; /* 화면 전체 높이에 맞추기 위해 */
 `;
 
 const Manager = styled.p`
