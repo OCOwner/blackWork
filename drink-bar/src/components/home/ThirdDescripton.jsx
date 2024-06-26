@@ -92,5 +92,5 @@ const Image = styled.img`
 // 콜 컨테이너 스타일 설정
 const CallContainer = styled.div`
   margin-top: 20px; // 위쪽 여백 설정
-  margin-left: -130px; // 왼쪽 여백 설정, LittleTitle과 맞추기 위해 조정
+  margin-left: -660px; // 왼쪽 여백 설정, LittleTitle과 맞추기 위해 조정
 `;
