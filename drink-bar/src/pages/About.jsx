@@ -1,9 +1,12 @@
 import React from 'react';
+import BestBar from '../components/about/BestBar';
+import Discription from '../components/about/Discription';
 
 const About = () => {
   return (
     <div>
-      <h1>About</h1>
+      <BestBar />
+      <Discription />
     </div>
   );
 };
