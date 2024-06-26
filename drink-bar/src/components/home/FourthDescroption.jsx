@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import image1 from "../../assets/image/background-image.png"
-import image2 from "../../assets/image/background-image.png"
+import image1 from "../../assets/image/image4.jpeg";
+import image2 from "../../assets/image/image5.jpeg";
+import backgroundImage from "../../assets/image/place6.jpeg";
+
 const FourthDescription = () => {
     return (
         <Container>
@@ -16,10 +18,13 @@ const FourthDescription = () => {
 export default FourthDescription;
 
 const Container = styled.div`
-    background-color: ${(props) => props.theme.color.background};
+    background-image: url(${backgroundImage});
+    background-size: cover; /* 배경 이미지를 컨테이너에 맞춰서 늘리거나 줄입니다 */
+    background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
+    background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
     color: #ffffff;
-    border-style: solid;
     text-align: center; // 타이틀을 가운데 정렬합니다
+    padding: 100px;
 `;
 const Title = styled.h2`
     margin-bottom: 20px;

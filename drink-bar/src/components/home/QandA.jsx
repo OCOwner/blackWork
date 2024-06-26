@@ -130,5 +130,6 @@ const A = styled.p`
   line-height: 1.5;
 `;
 const Manager =styled.p`
-    
+    text-align: center;
+    font-size: 20px;
 `;
