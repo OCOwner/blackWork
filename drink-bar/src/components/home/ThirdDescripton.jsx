@@ -40,6 +40,8 @@ const Container = styled.div`
   background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
   background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
   color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
   padding: 2%; // 내부 여백 설정
   text-align: center; // 자식 요소들을 가운데 정렬
 `;
@@ -59,8 +61,6 @@ const TextContainer = styled.div`
   max-width: 50%; // 최대 너비 설정
   text-align: left; // 텍스트를 왼쪽 정렬
   align-items: flex-start; // 세로 방향에서 왼쪽 정렬
-  position: relative; // 상대 위치 설정
-  padding-left: 2%; // 내부 여백 설정
 `;
 
 // 제목 스타일 설정

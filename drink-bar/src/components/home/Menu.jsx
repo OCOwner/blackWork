@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import image1 from "../../assets/image/menu.jpg";
 import image2 from "../../assets/image/image13.png";
-import image3 from "../../assets/image/image8.jpeg";
+import image3 from "../../assets/image/image10.jpeg";
 import backgroundImage from "../../assets/image/image18.jpeg";
 
-const FifthDescription = () => {
+const Menu = ({barName, eng}) => {
     return (
         <Container>
+            {barName !== "" ? <BarName>{barName}<br/>{eng}</BarName> : null}
             <Title>MENU</Title>
             <Image src= {image1} alt="Menu"/>
             <ImageRow>
@@ -16,7 +17,7 @@ const FifthDescription = () => {
         </Container>
     );
 }
-export default FifthDescription;
+export default Menu;
 
 const Container = styled.div`
     background-image: url(${backgroundImage});
@@ -37,7 +38,7 @@ const Title = styled.h1`
 const Image = styled.img`
     border-radius: 5px;
     max-width: 842px;
-    heigth: auto;
+    height: auto;
 `;
 const ImageRow = styled.div`
     display: flex; // 플렉스 박스로 설정
@@ -45,10 +46,15 @@ const ImageRow = styled.div`
     margin-top: 20px; // 이미지 간의 간격을 위해 상단 여백 추가
 `;
 const Image2 = styled.img`
-    width: 421px;
-    heigth: 421px;
+    max-width: 420px;
+    height: auto;
     margin-left: 10px;
+    border-radius: 5px;
 `;
-
+const BarName = styled.p`
+    font-size: 41px;
+    text-align: center;
+    margin: 0px;
+`;
 
 
