@@ -4,7 +4,7 @@ import MainDescription from '../components/home/MainDescription';
 import SecondDescription from '../components/home/SecondDescription';
 import ThirdDescription from '../components/home/ThirdDescripton';
 import FourthDescription from '../components/home/FourthDescroption';
-import FifthDescription from '../components/home/FifththDescription';
+import Menu from '../components/home/Menu';
 import QandA from '../components/home/QandA';
 import Review from '../components/info/Review';
 import HowToGetThere from '../components/home/HowToGetThere';
@@ -17,7 +17,7 @@ const Home = () => {
       <SecondDescription />
       <ThirdDescription />
       <FourthDescription />
-      <FifthDescription />
+      <Menu />
       <QandA title={'Q & A'} manager={"신동실장"} number={"010-5691-6578"} />
       <Review />
       <HowToGetThere />

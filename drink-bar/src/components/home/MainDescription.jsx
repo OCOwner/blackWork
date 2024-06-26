@@ -31,9 +31,6 @@ const Container = styled.div`
     background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
     background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
     color: #ffffff;
-    padding-top: 300px;
-    padding-bottom: 169px;
-    padding-left: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
