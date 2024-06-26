@@ -28,6 +28,8 @@ const Container = styled.div`
     flex-direction: column; // 요소들을 세로로 정렬
     align-items: center; // 내부 요소들을 수직 축에서 가운데 정렬
     padding-bottom:20px;
+    display: flex;
+    flex-wrap: wrap;
 `;
 const Title = styled.h1`
     text-align: center;
@@ -35,7 +37,7 @@ const Title = styled.h1`
 const Image = styled.img`
     border-radius: 5px;
     max-width: 842px;
-    heigth: 900px;
+    heigth: auto;
 `;
 const ImageRow = styled.div`
     display: flex; // 플렉스 박스로 설정
