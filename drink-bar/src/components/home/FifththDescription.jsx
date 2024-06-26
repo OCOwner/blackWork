@@ -33,6 +33,7 @@ const Title = styled.h1`
     text-align: center;
 `;
 const Image = styled.img`
+    border-radius: 5px;
     max-width: 842px;
     heigth: 900px;
 `;
