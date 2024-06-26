@@ -1,14 +1,17 @@
 import styled from "styled-components";
-import image from "../../assets/image/background-image.png"
+import image1 from "../../assets/image/menu.jpg";
+import image2 from "../../assets/image/image13.png";
+import image3 from "../../assets/image/image8.jpeg";
+import backgroundImage from "../../assets/image/image18.jpeg";
 
 const FifthDescription = () => {
     return (
         <Container>
             <Title>MENU</Title>
-            <Image src= {image} alt="Menu"/>
+            <Image src= {image1} alt="Menu"/>
             <ImageRow>
-            <Image2 src= {image} alt="servImage" />
-            <Image2 src= {image} alt="servImage" />
+            <Image2 src= {image2} alt="servImage" />
+            <Image2 src= {image3} alt="servImage" />
             </ImageRow>
         </Container>
     );
@@ -16,17 +19,21 @@ const FifthDescription = () => {
 export default FifthDescription;
 
 const Container = styled.div`
-    background-color: ${(props) => props.theme.color.background};
-    border-style: solid;
+    background-image: url(${backgroundImage});
+    background-size: cover; /* 배경 이미지를 컨테이너에 맞춰서 늘리거나 줄입니다 */
+    background-position: center; /* 배경 이미지를 가운데 정렬합니다 */
+    background-repeat: no-repeat; /* 배경 이미지를 반복하지 않습니다 */
+    color: #ffffff;
     display: flex; // 플렉스 박스로 설정
     flex-direction: column; // 요소들을 세로로 정렬
     align-items: center; // 내부 요소들을 수직 축에서 가운데 정렬
+    padding-bottom:20px;
 `;
 const Title = styled.h1`
     text-align: center;
 `;
 const Image = styled.img`
-    width: 842px;
+    max-width: 842px;
     heigth: 900px;
 `;
 const ImageRow = styled.div`

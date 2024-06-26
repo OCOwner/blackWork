@@ -8,6 +8,7 @@ import FifthDescription from '../components/home/FifththDescription';
 import QandA from '../components/home/QandA';
 import Review from '../components/info/Review';
 import HowToGetThere from '../components/home/HowToGetThere';
+import Call from '../components/home/Call';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <QandA title={'Q & A'} manager={"신동실장"} number={"010-5691-6578"} />
       <Review />
       <HowToGetThere />
+      <Call />
     </Container>
   );
 };
@@ -27,5 +29,5 @@ const Home = () => {
 export default Home;
 
 const Container = styled.div`
-  /* flex: 1; */
+  background-color: ${(props) => props.theme.color.background};
 `;

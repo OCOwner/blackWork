@@ -1,12 +1,11 @@
-
 import styled from "styled-components";
-import image from "../../assets/image/background-image.png"
+import image from "../../assets/image/image18.jpeg";
 
 const SecondDescription = () => {
     return (
-            <Container>
-                <Image src={image}/>
-                <DiscriptionContainer>
+        <Container>
+            <Image src={image} />
+            <DescriptionContainer>
                 <Title>강남역 착석바</Title>
                 <Contents>
                     저희 BAR11은 강남유일의 클럽형 착석바입니다.<br />
@@ -18,40 +17,45 @@ const SecondDescription = () => {
                     강남 최고의 착석바 BAR11이 될 것을 약속 드리겠습니다.<br />
                     문의전화: 010-2073-9779<br />
                 </Contents>
-                </DiscriptionContainer>
-            </Container>
+            </DescriptionContainer>
+        </Container>
     );
 }
 
 export default SecondDescription;
 
 const Container = styled.div`
-    background-color: ${(props) => props.theme.color.background};
-    border-style: solid;
+    background-color: #ffffff;
     display: flex;
-    align-items: flex-start;
-    padding: 20px;
+    align-items: center; /* 세로 중앙 정렬 */
+    justify-content: center; /* 가로 중앙 정렬 */
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 300px;
+    text-align: center; /* 내용 가운데 정렬 */
 `;
 
 const Image = styled.img`
-    width: 480px;
-    height: 480px;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover; /* 이미지 비율 유지하며 잘라내기 */
     margin-right: 20px;
 `;
 
-const DiscriptionContainer= styled.div`
-    background-color: ${(props) => props.theme.color.background};
-    color:#ffffff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+const DescriptionContainer = styled.div`
+    flex: 1; /* 남는 공간을 모두 사용하도록 설정 */
+    background-color: #ffffff;
+    font-weight: 900;
+    text-align: left; /* 제목과 내용을 왼쪽으로 정렬 */
 `;
 
 const Title = styled.p`
-    font-size: 39px;
+    font-size: 2.5rem; /* 더 큰 제목 사이즈 */
+    margin-bottom: 20px; /* 제목과 내용 사이 여백 추가 */
 `;
 
 const Contents = styled.p`
-    font-size: 17px;
-    line-height: 1.5;
+    font-size: 1.1rem; /* 더 큰 내용 사이즈 */
+    line-height: 1.6; /* 더 넓은 줄간격 */
 `;
