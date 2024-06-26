@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
-import MainDescription from '../components/home/MainDescription'
+import MainDescription from '../components/home/MainDescription';
 import SecondDescription from '../components/home/SecondDescription';
 import ThirdDescription from '../components/home/ThirdDescripton';
 import FourthDescription from '../components/home/FourthDescroption';
@@ -15,7 +15,7 @@ const Home = () => {
       <ThirdDescription />
       <FourthDescription />
       <FifthDescription />
-      <QandA />
+      <QandA title={'Q & A'} />
     </Container>
   );
 };
