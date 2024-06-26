@@ -6,6 +6,8 @@ import ThirdDescription from '../components/home/ThirdDescripton';
 import FourthDescription from '../components/home/FourthDescroption';
 import FifthDescription from '../components/home/FifththDescription';
 import QandA from '../components/home/QandA';
+import Review from '../components/info/Review';
+import HowToGetThere from '../components/home/HowToGetThere';
 
 const Home = () => {
   return (
@@ -15,7 +17,9 @@ const Home = () => {
       <ThirdDescription />
       <FourthDescription />
       <FifthDescription />
-      <QandA title={'Q & A'} />
+      <QandA title={'Q & A'} manager={"신동실장"} number={"010-5691-6578"} />
+      <Review />
+      <HowToGetThere />
     </Container>
   );
 };
