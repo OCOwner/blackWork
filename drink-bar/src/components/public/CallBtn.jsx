@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const CallBtn = () => {
-  const phoneNumber = '010-5691-6578'; // 전화번호를 여기에 설정
+  const phoneNumber = '010-5691-6578';
 
   return (
     <ButtonWrapper>
