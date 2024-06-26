@@ -27,6 +27,7 @@ export default SecondDescription;
 const Container = styled.div`
     background-color: #ffffff;
     display: flex;
+    flex-wrap: wrap;
     align-items: center; /* 세로 중앙 정렬 */
     justify-content: center; /* 가로 중앙 정렬 */
     padding-top: 40px;
@@ -34,6 +35,7 @@ const Container = styled.div`
     padding-bottom: 40px;
     padding-left: 300px;
     text-align: center; /* 내용 가운데 정렬 */
+    
 `;
 
 const Image = styled.img`

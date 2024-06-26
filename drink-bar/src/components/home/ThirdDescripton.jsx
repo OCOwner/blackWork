@@ -84,7 +84,7 @@ const Contents = styled.p`
 
 // 이미지 스타일 설정
 const Image = styled.img`
-  width: 50%; // 너비 설정
+  max-width: 50%; // 너비 설정
   height: auto; // 높이 자동 설정
   margin-left: 2%; // 왼쪽 여백 설정
   border-radius: 5px;

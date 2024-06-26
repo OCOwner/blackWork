@@ -35,6 +35,7 @@ const Container = styled.div`
     padding-bottom: 169px;
     padding-left: 80px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center; /* 수직 방향 가운데 정렬 */
     align-items: center; /* 수평 방향 가운데 정렬 */
