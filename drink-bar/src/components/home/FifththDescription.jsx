@@ -16,6 +16,7 @@ const FifthDescription = () => {
 export default FifthDescription;
 
 const Container = styled.div`
+    background-color: ${(props) => props.theme.color.background};
     border-style: solid;
     display: flex; // 플렉스 박스로 설정
     flex-direction: column; // 요소들을 세로로 정렬
