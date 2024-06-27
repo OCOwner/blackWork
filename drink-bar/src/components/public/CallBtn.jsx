@@ -36,11 +36,11 @@ const StyledButton = styled.a`
   cursor: pointer;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: #cc0000; /* 어두운 빨간색 */
   }
 
   &:active {
-    background-color: #004085;
+    background-color: #990000; /* 진한 빨간색 */
   }
 
   & > svg {
