@@ -50,7 +50,7 @@ const Image = styled.img`
   height: auto;
   border-radius: 20px;
   padding: 10px;
-  @media (max-width: 768px) {
+  @media (max-width: 1028px) {
     width: calc(
       100% - 20px
     ); /* 모바일 화면에서 이미지가 전체 너비를 차지하도록 */

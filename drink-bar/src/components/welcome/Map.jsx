@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import styled from 'styled-components';
-import icon1 from '../../assets/image/1.png';
+import icon1 from '../../assets/image/2.png';
 
 const Map = () => {
   useEffect(() => {
@@ -36,7 +36,7 @@ const Map = () => {
   }, []);
 
   return (
-    <>
+    <Wrapper>
       <Icon src={icon1} alt="왕관" />
       <Container>
         <Comment>
@@ -50,11 +50,15 @@ const Map = () => {
         </Comment>
         <KaKaoMap id="kakao-map" />
       </Container>
-    </>
+    </Wrapper>
   );
 };
 
 export default Map;
+
+const Wrapper = styled.div`
+  padding-top: 30px;
+`;
 
 const Container = styled.div`
   display: flex;
