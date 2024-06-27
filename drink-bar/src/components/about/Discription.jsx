@@ -46,10 +46,9 @@ const Container = styled.div`
 `;
 
 const Element = styled.div`
-  display: flex;
   flex-wrap: wrap; /* Allow items to wrap onto new lines */
   justify-content: center; /* Center items horizontally */
-  align-items: flex-start; /* Align items to the top */
+
   max-width: 1200px; /* Adjust max-width as needed */
   padding: 20px;
 `;

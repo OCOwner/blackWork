@@ -37,6 +37,9 @@ const Title = styled.h1`
   margin-bottom: 20px;
   color: #ffffff; /* 흰색 글자 색상 */
   text-align: center; /* 가운데 정렬 */
+  @media (max-width: 768px) {
+    font-size: 30px; /* 글자 크기 설정 */
+  }
 `;
 
 const FeaturesContainer = styled.div`
@@ -54,6 +57,8 @@ const Element = styled.div`
   background-color: ${(props) => props.theme.color.background};
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   margin: 10px;
+  border: 3px solid #ffffff;
+  border-radius: 20px;
 `;
 
 const BestBarTitle = styled.p`
