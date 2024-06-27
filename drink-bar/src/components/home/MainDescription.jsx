@@ -6,7 +6,7 @@ import backgroundImage from "../../assets/image/image17.jpeg";
 const MainDescription = () => {
     return (
         <Container>
-            <Manager>BAR11 신동실장 010 2073 9779</Manager>
+            <Manager>BAR11 신동실장 010-3102-0233</Manager>
             <ShopName>강남착석바 BAR 11</ShopName>
             <Description>
                 강남유일의, 최대 규모의 클럽형 착석바입니다.<br/>

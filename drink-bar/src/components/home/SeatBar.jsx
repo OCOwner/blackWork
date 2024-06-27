@@ -16,7 +16,7 @@ const SecondDescription = () => {
                         <br />
                         고객님의 부담은 줄여드리고 즐거움은 제곱으로 증가시키는<br />
                         강남 최고의 착석바 BAR11이 될 것을 약속 드리겠습니다.<br />
-                        문의전화: 010-2073-9779<br />
+                        문의전화: 010-3102-0233<br />
                     </Contents>
                 </DescriptionContainer>
             </Content>
