@@ -1,20 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import image1 from "../../src/assets/image/menu.jpg";
-import image2 from "../../src/assets/image/image13.png";
-import image3 from "../../src/assets/image/image10.jpeg";
-import backgroundImage from "../../src/assets/image/image18.jpeg";
+import React from 'react';
+import styled from 'styled-components';
+import image1 from '../../src/assets/image/menu.jpg';
+import image2 from '../../src/assets/image/image13.png';
+import image3 from '../../src/assets/image/image10.jpeg';
+import backgroundImage from '../../src/assets/image/image18.jpeg';
 
 const Menu = ({ barName, eng }) => {
   return (
     <Container>
-      {barName !== "" ? (
-        <BarName>
-          {barName}
-          <br />
-          {eng}
-        </BarName>
-      ) : null}
+      {/* {barName !== '' ? <BarName>{eng}</BarName> : null} */}
       <Title>MENU</Title>
       <ImageContainer>
         <Image src={image1} alt="Menu" />
@@ -54,7 +48,13 @@ const Image = styled.img`
   width: 100%;
   max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 20px;
+  padding: 10px;
+  @media (max-width: 768px) {
+    width: calc(
+      100% - 20px
+    ); /* 모바일 화면에서 이미지가 전체 너비를 차지하도록 */
+  }
 `;
 
 const ImageRow = styled.div`
@@ -65,18 +65,18 @@ const ImageRow = styled.div`
 `;
 
 const Image2 = styled.img`
-  max-width: 400px;
+  width: calc(50% - 20px); /* 두 이미지가 한 줄에 나란히 있도록 */
+  max-width: 100%;
   height: auto;
   border-radius: 20px;
   margin: 10px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
-
-const BarName = styled.p`
-  font-size: 41px;
-  text-align: center;
-  margin: 0;
+  @media (max-width: 768px) {
+    width: calc(
+      100% - 20px
+    ); /* 모바일 화면에서 이미지가 전체 너비를 차지하도록 */
+  }
 `;
 
 export default Menu;
