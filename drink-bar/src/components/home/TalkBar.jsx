@@ -15,8 +15,11 @@ const ThirdDescription = () => {
             <Ment>2. 매번 색다른 여성들을 만나고 싶으신 분들</Ment>
             <Ment>3. 어린 20대 일반인 여성을 만나고 싶으신 분들</Ment>
             <Ment>
-              투잡으로 정말 다양한 직업군의 여성분들이 50~60명씩 항시 대기중
-              입니다. 매번 색다르고 질리지 않는 홀초이스 서비스로 대표님들을
+              4. 투잡으로 정말 다양한 직업군의 여성분들이 50~60명씩 항시 대기중
+              입니다. 
+            </Ment>
+            <Ment>
+              5. 매번 색다르고 질리지 않는 홀초이스 서비스로 대표님들을
               만족시켜드립니다.
             </Ment>
           </Contents>
@@ -61,12 +64,16 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   max-width: 50%;
+  min-width: 230px;
   text-align: left;
   align-items: flex-start;
-  padding: 20px;
+  padding: 65px 10px;
   background: rgba(0, 0, 0, 0.6); // 반투명 배경색 추가
   border-radius: 10px; // 모서리를 둥글게 설정
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 부드러운 그림자 추가
+  /* @media screen and (max-width: 1023px) {
+    
+  } */
 `;
 
 // 제목 스타일 설정
@@ -105,8 +112,11 @@ const Ment = styled.p`
 // 이미지 스타일 설정
 const Image = styled.img`
   max-width: 50%;
+  min-width: 250px;
   height: auto;
   border-radius: 10px; // 모서리를 둥글게 설정
-  padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // 부드러운 그림자 추가
+  @media (max-width: 768px) {
+        font-size: 1px;
+    }
 `;
