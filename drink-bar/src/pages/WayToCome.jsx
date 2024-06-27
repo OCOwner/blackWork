@@ -18,7 +18,7 @@ const WayToCome = () => {
 export default WayToCome;
 
 const Container = styled.div`
-  position: relative;
+  /* position: relative; */
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
@@ -28,7 +28,7 @@ const Container = styled.div`
 
   &::before {
     content: '';
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
