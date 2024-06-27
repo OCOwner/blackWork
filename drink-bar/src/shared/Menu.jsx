@@ -68,9 +68,12 @@ const Image2 = styled.img`
   max-width: 400px;
   height: auto;
   border-radius: 20px;
-  margin: 10px;
+  margin: 18px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+        max-width: 350px;
+    }
 `;
 
 const BarName = styled.p`

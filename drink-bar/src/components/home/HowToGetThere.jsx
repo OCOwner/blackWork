@@ -55,4 +55,7 @@ const HowToImgImage = styled.img`
   height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media (max-width: 768px) {
+        max-width: 300px;
+    }
 `;

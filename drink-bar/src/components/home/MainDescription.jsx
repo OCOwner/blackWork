@@ -6,7 +6,7 @@ import backgroundImage from "../../assets/image/image17.jpeg";
 const MainDescription = () => {
     return (
         <Container>
-            <Manager>BAR11 석구실장 010 2073 9779</Manager>
+            <Manager>BAR11 신동실장 010 2073 9779</Manager>
             <ShopName>강남착석바 BAR 11</ShopName>
             <Description>
                 강남유일의, 최대 규모의 클럽형 착석바입니다.<br/>
@@ -42,12 +42,16 @@ const Container = styled.div`
 
 const Manager = styled.p`
     font-size: 24px;
+ 
 `;
 
 const ShopName = styled.p`
     font-size: 94px;
     margin-top: 10px;
     margin-bottom: 10px;
+    @media (max-width: 768px) {
+        font-size: 50px;
+    }
 `;
 
 const Description = styled.p`
